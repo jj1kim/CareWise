@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AWS from "aws-sdk";
+import { getResult } from "../apis/api.js";
 
 import { default as Canvas } from "../components/Canvas/index.jsx";
 import careLabelSample from "../assets/images/icons/carelabel-sample.png";
@@ -8,6 +9,8 @@ import uploadLogo from "../assets/images/icons/material-symbols_upload.png";
 import { Loading, RecogFail } from "../components/Modal/index.jsx";
 
 const LabelExPage = () => {
+  const navigate = useNavigate();
+
   const [isLoading, setisLoading] = useState(false);
 
   const [selectedFile, setSelectedFile] = useState(null);
@@ -48,6 +51,18 @@ const LabelExPage = () => {
         // 업로드 성공 후 필요한 작업 수행
       }
     });
+  };
+
+  // API 실행 함수 (현재는 정의만 되어 있어 작동시키는 코드 추가해야 함)
+  const getResultAPI = async () => {
+    const result = await getResult();
+    if (result) {
+      navigate("/label-ex-result", {
+        state: { image: URL.createObjectURL(selectedFile), result: result },
+      });
+    } else {
+      navigate(""); // 인식 실패 페이지로 이동 (아직 구현 x)
+    }
   };
 
   return (
