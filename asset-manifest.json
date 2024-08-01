@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CareWise/static/css/main.679a9dc8.css",
-    "main.js": "/CareWise/static/js/main.1987d558.js",
+    "main.js": "/CareWise/static/js/main.cd0bbbbe.js",
     "static/js/453.fb256eb4.chunk.js": "/CareWise/static/js/453.fb256eb4.chunk.js",
     "static/media/closet.png": "/CareWise/static/media/closet.81734389ca985ca9a1e2.png",
     "static/media/carelabel-sample.png": "/CareWise/static/media/carelabel-sample.a284f294c1ac57975232.png",
@@ -16,11 +16,11 @@
     "static/media/Vector.svg": "/CareWise/static/media/Vector.95eadd35c19e64f5a1ed29470928af24.svg",
     "static/media/Polygon1.svg": "/CareWise/static/media/Polygon1.6d021f9cdc6c031096cf0d21663fab58.svg",
     "main.679a9dc8.css.map": "/CareWise/static/css/main.679a9dc8.css.map",
-    "main.1987d558.js.map": "/CareWise/static/js/main.1987d558.js.map",
+    "main.cd0bbbbe.js.map": "/CareWise/static/js/main.cd0bbbbe.js.map",
     "453.fb256eb4.chunk.js.map": "/CareWise/static/js/453.fb256eb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.679a9dc8.css",
-    "static/js/main.1987d558.js"
+    "static/js/main.cd0bbbbe.js"
   ]
 }
