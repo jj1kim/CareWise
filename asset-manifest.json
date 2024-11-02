@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CareWise/static/css/main.d2138752.css",
-    "main.js": "/CareWise/static/js/main.61937f56.js",
+    "main.js": "/CareWise/static/js/main.b18b9993.js",
     "static/js/453.fb256eb4.chunk.js": "/CareWise/static/js/453.fb256eb4.chunk.js",
     "static/media/back_label_asset.png": "/CareWise/static/media/back_label_asset.166140c69eb78192711e.png",
     "static/media/closet.png": "/CareWise/static/media/closet.81734389ca985ca9a1e2.png",
@@ -100,19 +100,19 @@
     "static/media/bleach-no(2).png": "/CareWise/static/media/bleach-no(2).6dda5a4bef5e612b6a3f.png",
     "static/media/dry-hang(4).png": "/CareWise/static/media/dry-hang(4).1871e840169f991581ec.png",
     "static/media/dry-hang-shadow.png": "/CareWise/static/media/dry-hang-shadow.c0808d6428f924e466ad.png",
-    "static/media/ph_question.svg": "/CareWise/static/media/ph_question.f2e306ef54c40626ed8c36a64de18257.svg",
-    "static/media/smile.svg": "/CareWise/static/media/smile.ff69c35d395a0183b1795f33e135848d.svg",
+    "static/media/ph_question.svg": "/CareWise/static/media/ph_question.20d87fd0bbf1c8079ad66d6238b5f0fa.svg",
+    "static/media/smile.svg": "/CareWise/static/media/smile.d4381d932354487430796ee365f7054e.svg",
     "index.html": "/CareWise/index.html",
-    "static/media/arrow.svg": "/CareWise/static/media/arrow.99180e11fb57e92be34ed5b4e075ed9a.svg",
-    "static/media/arrow_white.svg": "/CareWise/static/media/arrow_white.c9fb5c841f018d9f069f22ebd9caecff.svg",
-    "static/media/Vector.svg": "/CareWise/static/media/Vector.95eadd35c19e64f5a1ed29470928af24.svg",
-    "static/media/Polygon1.svg": "/CareWise/static/media/Polygon1.6d021f9cdc6c031096cf0d21663fab58.svg",
+    "static/media/arrow.svg": "/CareWise/static/media/arrow.287b7c1aed998e3328a9f256482923bf.svg",
+    "static/media/arrow_white.svg": "/CareWise/static/media/arrow_white.b25b004200a825bac61f52677b20054f.svg",
+    "static/media/Vector.svg": "/CareWise/static/media/Vector.de5038014afa10ae82666d6dc64b91b7.svg",
+    "static/media/Polygon1.svg": "/CareWise/static/media/Polygon1.e46eedbf87b2da69960a4f6ed0dcf186.svg",
     "main.d2138752.css.map": "/CareWise/static/css/main.d2138752.css.map",
-    "main.61937f56.js.map": "/CareWise/static/js/main.61937f56.js.map",
+    "main.b18b9993.js.map": "/CareWise/static/js/main.b18b9993.js.map",
     "453.fb256eb4.chunk.js.map": "/CareWise/static/js/453.fb256eb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d2138752.css",
-    "static/js/main.61937f56.js"
+    "static/js/main.b18b9993.js"
   ]
 }
