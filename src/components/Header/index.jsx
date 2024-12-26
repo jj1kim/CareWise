@@ -1,27 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/title.png";
 import alert from "../../assets/images/icons/alert.png";
 import closet from "../../assets/images/icons/closet.png";
 import profile from "../../assets/images/icons/profile.png";
 
-const Header = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  const handleLogout = () => {
-    setIsAuthenticated(false);
-    // Add logout logic (e.g., token removal) if needed
-  };
-
-  const handleLogin = () => {
-    setIsAuthenticated(true);
-    // Additional login logic if needed
-  };
-
+const Header = ({ isAuthenticated, onLogout }) => {
   return (
     <header className="w-full max-w-[1440px] mx-auto h-[85px]">
       <div className="fixed z-50 flex items-center justify-between w-full h-[85px] px-[109px] py-[22px] bg-white">
-        {/* Left Navigation */}
         <nav className="flex items-center gap-[30px]">
           <Link to="/">
             <p className="header-menu text-[17px]">HOME</p>
@@ -36,8 +23,6 @@ const Header = () => {
             <p className="header-menu text-[17px]">세탁기호 찾기</p>
           </Link>
         </nav>
-
-        {/* Center Logo */}
         <Link to="/" className="absolute left-1/2 transform -translate-x-1/2">
           <img
             className="w-[168px] h-[40px] object-cover"
@@ -46,12 +31,11 @@ const Header = () => {
           />
         </Link>
 
-        {/* Right Navigation */}
         {isAuthenticated ? (
           <nav className="flex items-center gap-[30px]">
             <p
               className="header-menu text-[17px] cursor-pointer"
-              onClick={handleLogout}
+              onClick={onLogout}
             >
               로그아웃
             </p>
@@ -75,7 +59,7 @@ const Header = () => {
           </nav>
         ) : (
           <nav className="flex items-center gap-[30px]">
-            <Link to="/auth/login" onClick={handleLogin}>
+            <Link to="/auth/login">
               <p className="header-menu text-[17px]">로그인</p>
             </Link>
             <Link to="/auth/signup">
