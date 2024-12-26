@@ -66,7 +66,7 @@ const Banner1 = (
             커뮤니티에 물어보세요!
           </p>
           <p className="relative inter-light w-[537px] text-[17px] text-white">
-          어떻게 관리해야할지 헷갈리는 의류나, 소재를 검색해보세요.
+            어떻게 관리해야할지 헷갈리는 의류나, 소재를 검색해보세요.
           </p>
         </article>
       </div>

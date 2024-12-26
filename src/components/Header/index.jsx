@@ -21,7 +21,6 @@ const Header = () => {
   return (
     <header className="w-full max-w-[1440px] mx-auto h-[85px]">
       <div className="fixed z-50 flex items-center justify-between w-full h-[85px] px-[109px] py-[22px] bg-white">
-        
         {/* Left Navigation */}
         <nav className="flex items-center gap-[30px]">
           <Link to="/">
@@ -37,26 +36,41 @@ const Header = () => {
             <p className="header-menu text-[17px]">세탁기호 찾기</p>
           </Link>
         </nav>
-        
+
         {/* Center Logo */}
         <Link to="/" className="absolute left-1/2 transform -translate-x-1/2">
-          <img className="w-[168px] h-[40px] object-cover" alt="Element" src={logo} />
+          <img
+            className="w-[168px] h-[40px] object-cover"
+            alt="Element"
+            src={logo}
+          />
         </Link>
 
         {/* Right Navigation */}
         {isAuthenticated ? (
           <nav className="flex items-center gap-[30px]">
-            <p className="header-menu text-[17px] cursor-pointer" onClick={handleLogout}>
+            <p
+              className="header-menu text-[17px] cursor-pointer"
+              onClick={handleLogout}
+            >
               로그아웃
             </p>
             <Link to="/">
               <img className="h-[18px] object-cover" alt="Alert" src={alert} />
             </Link>
             <Link to="/">
-              <img className="h-[18px] object-cover" alt="Closet" src={closet} />
+              <img
+                className="h-[18px] object-cover"
+                alt="Closet"
+                src={closet}
+              />
             </Link>
             <Link to="/">
-              <img className="h-[18px] object-cover" alt="Profile" src={profile} />
+              <img
+                className="h-[18px] object-cover"
+                alt="Profile"
+                src={profile}
+              />
             </Link>
           </nav>
         ) : (

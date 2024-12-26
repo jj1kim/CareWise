@@ -87,102 +87,122 @@ const SignupDetailsPage = () => {
   return (
     <div className="w-[1440px] h-[1024px] flex justify-center bg-white">
       <div className="w-[1045px] h-[830px] px-[61px] mt-[170px] shadow-custom-light rounded-2xl bg-white flex flex-col">
-        
         <h2 className="text-[25px] mt-[64px] font-semibold">회원가입</h2>
 
-        
-          <label htmlFor="username" className="text-[16px] font-medium text-gray-700 mt-[42px]">
-            아이디
-          </label>
-          <input
-            id="username"
-            name="username"
-            required 
-            type="text"
-            value={formData.username}
-            onChange={handleChange}
-            placeholder="아이디를 입력하세요"
-            className={`w-full h-12 px-[16px] text-[14px] mt-[6px] border ${
-              errors.username ? "border-red-500" : "border-gray-300"
-            } rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300`}
-          />
-          {errors.username && <p className="text-red-500 text-[12px] mt-1">{errors.username}</p>}
+        <label
+          htmlFor="username"
+          className="text-[16px] font-medium text-gray-700 mt-[42px]"
+        >
+          아이디
+        </label>
+        <input
+          id="username"
+          name="username"
+          required
+          type="text"
+          value={formData.username}
+          onChange={handleChange}
+          placeholder="아이디를 입력하세요"
+          className={`w-full h-12 px-[16px] text-[14px] mt-[6px] border ${
+            errors.username ? "border-red-500" : "border-gray-300"
+          } rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300`}
+        />
+        {errors.username && (
+          <p className="text-red-500 text-[12px] mt-1">{errors.username}</p>
+        )}
 
-          <label htmlFor="email" className="text-[16px] font-medium text-gray-700 mt-[29px]">
-            이메일
-          </label>
-          <input
-            id="email"
-            name="email"
-            required
-            type="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="이메일을 입력하세요"
-            className={`w-full h-12 px-[16px] text-[14px] mt-[6px] border ${
-              errors.email ? "border-red-500" : "border-gray-300"
-            } rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300`}
-          />
-          {errors.email && <p className="text-red-500 text-[12px] mt-1">{errors.email}</p>}
+        <label
+          htmlFor="email"
+          className="text-[16px] font-medium text-gray-700 mt-[29px]"
+        >
+          이메일
+        </label>
+        <input
+          id="email"
+          name="email"
+          required
+          type="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="이메일을 입력하세요"
+          className={`w-full h-12 px-[16px] text-[14px] mt-[6px] border ${
+            errors.email ? "border-red-500" : "border-gray-300"
+          } rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300`}
+        />
+        {errors.email && (
+          <p className="text-red-500 text-[12px] mt-1">{errors.email}</p>
+        )}
 
-          <label htmlFor="password" className="text-[16px] font-medium text-gray-700 mt-[29px]">
-            비밀번호
-          </label>
-          <input
-            id="password"
-            name="password"
-            required
-            type="password"
-            value={formData.password}
-            onChange={handleChange}
-            placeholder="비밀번호를 입력하세요"
-            className="w-full h-12 px-[16px] text-[14px] mt-[6px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
-          />
+        <label
+          htmlFor="password"
+          className="text-[16px] font-medium text-gray-700 mt-[29px]"
+        >
+          비밀번호
+        </label>
+        <input
+          id="password"
+          name="password"
+          required
+          type="password"
+          value={formData.password}
+          onChange={handleChange}
+          placeholder="비밀번호를 입력하세요"
+          className="w-full h-12 px-[16px] text-[14px] mt-[6px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300"
+        />
 
-          <label htmlFor="confirmPassword" className="text-[16px] font-medium text-gray-700 mt-[29px]">
-            비밀번호 확인
-          </label>
-          <input
-            id="confirmPassword"
-            name="confirmPassword"
-            required
-            type="password"
-            value={formData.confirmPassword}
-            onChange={handleChange}
-            placeholder="비밀번호를 다시 입력하세요"
-            className={`w-full h-12 px-[16px] text-[14px] mt-[6px] border ${
-              errors.confirmPassword ? "border-red-500" : "border-gray-300"
-            } rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300`}
-          />
-          {errors.confirmPassword && (
-            <p className="text-red-500 text-[12px] mt-1">{errors.confirmPassword}</p>
-          )}
+        <label
+          htmlFor="confirmPassword"
+          className="text-[16px] font-medium text-gray-700 mt-[29px]"
+        >
+          비밀번호 확인
+        </label>
+        <input
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+          type="password"
+          value={formData.confirmPassword}
+          onChange={handleChange}
+          placeholder="비밀번호를 다시 입력하세요"
+          className={`w-full h-12 px-[16px] text-[14px] mt-[6px] border ${
+            errors.confirmPassword ? "border-red-500" : "border-gray-300"
+          } rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300`}
+        />
+        {errors.confirmPassword && (
+          <p className="text-red-500 text-[12px] mt-1">
+            {errors.confirmPassword}
+          </p>
+        )}
 
-          <label htmlFor="nickname" className="text-[16px] font-medium text-gray-700 mt-[29px]">
-            닉네임 {"("}최대 10글자{")"}
-          </label>
-          <input
-            id="nickname"
-            name="nickname"
-            required
-            type="text"
-            value={formData.nickname}
-            onChange={handleChange}
-            maxLength={10} 
-            placeholder="닉네임을 입력하세요"
-            className={`w-full h-12 px-[16px] text-[14px] mt-[6px] border ${
-              errors.nickname ? "border-red-500" : "border-gray-300"
-            } rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300`}
-          />
-          {errors.nickname && <p className="text-red-500 text-[12px] mt-1">{errors.nickname}</p>}
+        <label
+          htmlFor="nickname"
+          className="text-[16px] font-medium text-gray-700 mt-[29px]"
+        >
+          닉네임 {"("}최대 10글자{")"}
+        </label>
+        <input
+          id="nickname"
+          name="nickname"
+          required
+          type="text"
+          value={formData.nickname}
+          onChange={handleChange}
+          maxLength={10}
+          placeholder="닉네임을 입력하세요"
+          className={`w-full h-12 px-[16px] text-[14px] mt-[6px] border ${
+            errors.nickname ? "border-red-500" : "border-gray-300"
+          } rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-300`}
+        />
+        {errors.nickname && (
+          <p className="text-red-500 text-[12px] mt-1">{errors.nickname}</p>
+        )}
 
-          <button
-            onClick={handleSubmit} 
-            className="w-[332px] h-[44px] mt-[65px] ml-[329px] text-[13px] bg-[#2C2C2C] text-white rounded-md hover:bg-[#474747] focus:outline-none"
-          >
-            회원가입하기
-          </button>
-      
+        <button
+          onClick={handleSubmit}
+          className="w-[332px] h-[44px] mt-[65px] ml-[329px] text-[13px] bg-[#2C2C2C] text-white rounded-md hover:bg-[#474747] focus:outline-none"
+        >
+          회원가입하기
+        </button>
       </div>
     </div>
   );

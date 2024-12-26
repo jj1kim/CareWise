@@ -6,7 +6,7 @@ import HomePage from "./routes/HomePage";
 import AuthPage from "./routes/AuthPage"; // Auth 경로 통합 페이지
 import CareSearchPage from "./routes/CareSearchPage";
 import CareResultPage from "./routes/CareResultPage";
-import UserPage from "./routes/UserPage.jsx"
+import UserPage from "./routes/UserPage.jsx";
 import "./App.css";
 
 function App() {
@@ -17,10 +17,10 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/auth/*" element={<AuthPage />} /> 
+            <Route path="/auth/*" element={<AuthPage />} />
             <Route path="/care-search" element={<CareSearchPage />} />
             <Route path="/care-result" element={<CareResultPage />} />
-            <Route path="/user" element={<UserPage />}/>
+            <Route path="/user" element={<UserPage />} />
           </Routes>
         </div>
         <Footer />
