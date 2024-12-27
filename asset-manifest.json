@@ -1,10 +1,15 @@
 {
   "files": {
-    "main.css": "/CareWise/static/css/main.5ee781db.css",
-    "main.js": "/CareWise/static/js/main.5fbdf304.js",
+    "main.css": "/CareWise/static/css/main.26286dd5.css",
+    "main.js": "/CareWise/static/js/main.d3b5becb.js",
     "static/js/453.fb256eb4.chunk.js": "/CareWise/static/js/453.fb256eb4.chunk.js",
+    "static/media/2.png": "/CareWise/static/media/2.ac884f0940e30f086795.png",
+    "static/media/3.png": "/CareWise/static/media/3.879377bdc45f1946f7e1.png",
     "static/media/back_label_asset.png": "/CareWise/static/media/back_label_asset.166140c69eb78192711e.png",
+    "static/media/1.png": "/CareWise/static/media/1.35a1725adeaccef1dfda.png",
     "static/media/closet.png": "/CareWise/static/media/closet.81734389ca985ca9a1e2.png",
+    "static/media/5.png": "/CareWise/static/media/5.de6d9ef632ba11e52efd.png",
+    "static/media/4.png": "/CareWise/static/media/4.f78e228530ebcf5426b9.png",
     "static/media/kinopio.jpg": "/CareWise/static/media/kinopio.b53c61d4fd95949db2a7.jpg",
     "static/media/carelabel-sample.png": "/CareWise/static/media/carelabel-sample.a284f294c1ac57975232.png",
     "static/media/title.png": "/CareWise/static/media/title.b13ca6d3e86bae9531b1.png",
@@ -120,12 +125,12 @@
     "static/media/pen.svg": "/CareWise/static/media/pen.13ac926529c56ed91ca041678b857a91.svg",
     "static/media/Vector.svg": "/CareWise/static/media/Vector.de5038014afa10ae82666d6dc64b91b7.svg",
     "static/media/Polygon1.svg": "/CareWise/static/media/Polygon1.e46eedbf87b2da69960a4f6ed0dcf186.svg",
-    "main.5ee781db.css.map": "/CareWise/static/css/main.5ee781db.css.map",
-    "main.5fbdf304.js.map": "/CareWise/static/js/main.5fbdf304.js.map",
+    "main.26286dd5.css.map": "/CareWise/static/css/main.26286dd5.css.map",
+    "main.d3b5becb.js.map": "/CareWise/static/js/main.d3b5becb.js.map",
     "453.fb256eb4.chunk.js.map": "/CareWise/static/js/453.fb256eb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ee781db.css",
-    "static/js/main.5fbdf304.js"
+    "static/css/main.26286dd5.css",
+    "static/js/main.d3b5becb.js"
   ]
 }
