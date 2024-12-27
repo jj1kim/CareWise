@@ -139,3 +139,33 @@ code {
 .icon.selected {
   color: #5a5a5a; /* 클릭 시 색상 */
 }
+
+/* 기본 색상 */
+.clothes {
+  color: #5e5e5e; /* 기본 색상 */
+}
+
+.element {
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 5px rgba(170, 170, 170, 0.17);
+}
+
+/* 스타일을 추가하려면, Tailwind 설정에서 custom CSS를 활성화하거나, global CSS 파일에 추가 */
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 열 */
+  gap: 16px; /* 각 아이템 간의 간격 */
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-item img {
+  width: 244px;
+  height: 244px;
+  object-fit: cover; /* 이미지가 비율에 맞게 잘리도록 설정 */
+}

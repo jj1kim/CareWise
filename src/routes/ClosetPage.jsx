@@ -5,6 +5,11 @@ import { ReactComponent as HangerIcon } from "../assets/images/icons/hanger2.svg
 import { ReactComponent as JacketIcon } from "../assets/images/icons/jacket.svg";
 import { ReactComponent as PantsIcon } from "../assets/images/icons/pants.svg";
 import { ReactComponent as ShirtIcon } from "../assets/images/icons/Tshirt.svg";
+import ex1 from "../assets/images/icons/1.png";
+import ex2 from "../assets/images/icons/2.png";
+import ex3 from "../assets/images/icons/3.png";
+import ex4 from "../assets/images/icons/4.png";
+import ex5 from "../assets/images/icons/5.png";
 
 const ClosetPage = () => {
   // 아이콘 클릭 상태 관리
@@ -16,7 +21,7 @@ const ClosetPage = () => {
   };
 
   return (
-    <div className="relative h-[1024px] w-[1440px]">
+    <div className="relative h-[1200px] w-[1440px]">
       {/* Header Section */}
       <div className="ml-[180px] mt-[40px] font-semibold text-[#3f3f3f] text-[35px]">
         내 옷장
@@ -27,7 +32,6 @@ const ClosetPage = () => {
 
       {/* Horizontal Bar */}
       <div className="ml-[180px] mt-10 w-[1047px] h-[19px] bg-[#F6F6F6] drop-shadow relative">
-        {/* Hangers and Icons */}
         <div className="flex justify-between">
           {/* Hanger 1 - Shirt */}
           <button
@@ -104,10 +108,54 @@ const ClosetPage = () => {
       {/* 카드 부분 */}
       <div className="ml-[180px] mt-[320px]">
         {selectedItem === "shirt" && (
-          <div className="p-4 bg-white ">
+          <div className="p-4 bg-white">
             <h3 className="font-semibold text-xl text-[#3f3f3f]">상의</h3>
+
+            <div className="image-grid">
+              <div className="image-item">
+                <img
+                  className="w-[244px] h-[244px] rounded-lg"
+                  src={ex1}
+                  alt="shirt 1"
+                />
+                <p className="text-sm text-[#3F3F3F]">나이키 맨투맨</p>
+              </div>
+              <div className="image-item">
+                <img
+                  className="w-[244px] h-[244px] rounded-lg"
+                  src={ex1}
+                  alt="shirt 2"
+                />
+                <p className="text-sm text-[#3F3F3F]">나이키 맨투맨</p>
+              </div>
+              <div className="image-item">
+                <img
+                  className="w-[244px] h-[244px] rounded-lg"
+                  src={ex1}
+                  alt="shirt 3"
+                />
+                <p className="text-sm text-[#3F3F3F]">나이키 맨투맨</p>
+              </div>
+              <div className="image-item">
+                <img
+                  className="w-[244px] h-[244px] rounded-lg"
+                  src={ex1}
+                  alt="shirt 4"
+                />
+                <p className="text-sm text-[#3F3F3F]">나이키 맨투맨</p>
+              </div>
+              <div className="image-item">
+                <img
+                  className="w-[244px] h-[244px] rounded-lg"
+                  src={ex1}
+                  alt="shirt 5"
+                />
+                <p className="text-sm text-[#3F3F3F]">나이키 맨투맨</p>
+              </div>
+            </div>
           </div>
         )}
+
         {selectedItem === "pants" && (
           <div className="p-4 bg-white">
             <h3 className="font-semibold text-xl text-[#3f3f3f]">하의</h3>

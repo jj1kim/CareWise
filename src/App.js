@@ -4,10 +4,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./routes/HomePage";
 import AuthPage from "./routes/AuthPage"; // Auth 경로 통합 페이지
+import LabelExpage from "./routes/LabelExPage.jsx";
+import LabelExResult from "./routes/LabelExResultPage.jsx";
+import LabelSearchPage from "./routes/LabelSearchPage.jsx";
 import CareSearchPage from "./routes/CareSearchPage";
 import CareResultPage from "./routes/CareResultPage";
 import UserPage from "./routes/UserPage.jsx";
 import ClosetPage from "./routes/ClosetPage.jsx";
+import ClosetCreatePage from "./routes/ClosetCreatePage.jsx";
 import "./App.css";
 
 function App() {
@@ -50,8 +54,12 @@ function App() {
             />
             <Route path="/care-search" element={<CareSearchPage />} />
             <Route path="/care-result" element={<CareResultPage />} />
+            <Route path="/label-ex" element={<LabelExpage />} />
+            <Route path="/label-ex-result" element={<LabelExResult />} />
+            <Route path="/label-search" element={<LabelSearchPage />} />
             <Route path="/user" element={<UserPage />} />
             <Route path="/closet" element={<ClosetPage />} />
+            <Route path="/closet-create" element={<ClosetCreatePage />} />
           </Routes>
         </div>
         <Footer />
