@@ -11,6 +11,9 @@ import CareResultPage2 from "./routes/CareResultPage2";
 import LabelExPage from "./routes/LabelExPage";
 import LabelExResult from "./routes/LabelExResultPage";
 import LabelSearchPage from "./routes/LabelSearchPage";
+import {QnABoardPage} from "./routes/QnABoardPage";
+import {PostDetailPage} from "./routes/PostDetailPage";
+import {PostCreatePage} from "./routes/PostCreatePage"
 import "./App.css";
 
 const ScrollToTop = () => {
@@ -43,6 +46,9 @@ const AnimatedRoutes = () => {
             <Route path="/label-ex" element={<LabelExPage />} />
             <Route path="/label-ex-result" element={<LabelExResult />} />
             <Route path="/label-search" element={<LabelSearchPage />} />
+            <Route path="/qna-board" element={<QnABoardPage />} />
+            <Route path="/post/:postID" element={<PostDetailPage />} />
+            <Route path="/post-create" element={<PostCreatePage />} />
           </Routes>
         </div>
       </CSSTransition>
