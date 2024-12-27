@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/CareWise/static/css/main.d2138752.css",
-    "main.js": "/CareWise/static/js/main.c5f5e6f9.js",
+    "main.css": "/CareWise/static/css/main.e82da6ee.css",
+    "main.js": "/CareWise/static/js/main.0f1a7248.js",
     "static/js/453.fb256eb4.chunk.js": "/CareWise/static/js/453.fb256eb4.chunk.js",
     "static/media/back_label_asset.png": "/CareWise/static/media/back_label_asset.166140c69eb78192711e.png",
     "static/media/closet.png": "/CareWise/static/media/closet.81734389ca985ca9a1e2.png",
+    "static/media/kinopio.jpg": "/CareWise/static/media/kinopio.b53c61d4fd95949db2a7.jpg",
     "static/media/carelabel-sample.png": "/CareWise/static/media/carelabel-sample.a284f294c1ac57975232.png",
     "static/media/title.png": "/CareWise/static/media/title.b13ca6d3e86bae9531b1.png",
     "static/media/dry-hang-shadow(3).png": "/CareWise/static/media/dry-hang-shadow(3).04e900492f114a433f5f.png",
@@ -12,6 +13,7 @@
     "static/media/wetcleaning-x.png": "/CareWise/static/media/wetcleaning-x.12700ffedaa35b5bf18d.png",
     "static/media/wetcleaning-mild.png": "/CareWise/static/media/wetcleaning-mild.cb8ae845f0ab5864447c.png",
     "static/media/wetcleaning.png": "/CareWise/static/media/wetcleaning.159bb9d23497780221fa.png",
+    "static/media/symbol.svg": "/CareWise/static/media/symbol.70f8dd675babddd9702388b64c01ef1f.svg",
     "static/media/dry-hang(3).png": "/CareWise/static/media/dry-hang(3).b7892d2d7eacdec35f70.png",
     "static/media/drycleaning-x(2).png": "/CareWise/static/media/drycleaning-x(2).2d0b57c77c647eef025b.png",
     "static/media/dry-flat(2).png": "/CareWise/static/media/dry-flat(2).9314b21ea4b5ab443df9.png",
@@ -38,6 +40,7 @@
     "static/media/iron-140-160-cloth.png": "/CareWise/static/media/iron-140-160-cloth.15bd46b5fab6d0954143.png",
     "static/media/iron-180-210-cloth.png": "/CareWise/static/media/iron-180-210-cloth.856792f3728f2c76337f.png",
     "static/media/iron-80-120-cloth.png": "/CareWise/static/media/iron-80-120-cloth.254e0042c387743fc5c2.png",
+    "static/media/kakao.png": "/CareWise/static/media/kakao.b5232ef284a1c9d90790.png",
     "static/media/notwashable.png": "/CareWise/static/media/notwashable.0ea1d63974256b7b6bca.png",
     "static/media/handwash.png": "/CareWise/static/media/handwash.23e60119a2d75053b1ca.png",
     "static/media/wring-x.png": "/CareWise/static/media/wring-x.031ab531406c8ee11140.png",
@@ -100,19 +103,23 @@
     "static/media/bleach-no(2).png": "/CareWise/static/media/bleach-no(2).6dda5a4bef5e612b6a3f.png",
     "static/media/dry-hang(4).png": "/CareWise/static/media/dry-hang(4).1871e840169f991581ec.png",
     "static/media/dry-hang-shadow.png": "/CareWise/static/media/dry-hang-shadow.c0808d6428f924e466ad.png",
+    "static/media/dislike.svg": "/CareWise/static/media/dislike.3435f6d9bd736f254a50d8bb06e9794c.svg",
+    "static/media/like.svg": "/CareWise/static/media/like.cc74850a46f49085211bc36aca95be1d.svg",
     "static/media/ph_question.svg": "/CareWise/static/media/ph_question.20d87fd0bbf1c8079ad66d6238b5f0fa.svg",
+    "static/media/hanger.svg": "/CareWise/static/media/hanger.6488e6c454cd259daadd2db5e5523b13.svg",
     "static/media/smile.svg": "/CareWise/static/media/smile.d4381d932354487430796ee365f7054e.svg",
     "index.html": "/CareWise/index.html",
     "static/media/arrow.svg": "/CareWise/static/media/arrow.287b7c1aed998e3328a9f256482923bf.svg",
     "static/media/arrow_white.svg": "/CareWise/static/media/arrow_white.b25b004200a825bac61f52677b20054f.svg",
+    "static/media/pen.svg": "/CareWise/static/media/pen.13ac926529c56ed91ca041678b857a91.svg",
     "static/media/Vector.svg": "/CareWise/static/media/Vector.de5038014afa10ae82666d6dc64b91b7.svg",
     "static/media/Polygon1.svg": "/CareWise/static/media/Polygon1.e46eedbf87b2da69960a4f6ed0dcf186.svg",
-    "main.d2138752.css.map": "/CareWise/static/css/main.d2138752.css.map",
-    "main.c5f5e6f9.js.map": "/CareWise/static/js/main.c5f5e6f9.js.map",
+    "main.e82da6ee.css.map": "/CareWise/static/css/main.e82da6ee.css.map",
+    "main.0f1a7248.js.map": "/CareWise/static/js/main.0f1a7248.js.map",
     "453.fb256eb4.chunk.js.map": "/CareWise/static/js/453.fb256eb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2138752.css",
-    "static/js/main.c5f5e6f9.js"
+    "static/css/main.e82da6ee.css",
+    "static/js/main.0f1a7248.js"
   ]
 }
