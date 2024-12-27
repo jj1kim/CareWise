@@ -109,48 +109,29 @@ const ClosetPage = () => {
       <div className="ml-[180px] mt-[320px]">
         {selectedItem === "shirt" && (
           <div className="p-4 bg-white">
-            <h3 className="font-semibold text-xl text-[#3f3f3f]">상의</h3>
-
+            <h3 className="font-semibold text-xl text-[#3f3f3f] mb-[30px]">
+              상의
+            </h3>
             <div className="image-grid">
               <div className="image-item">
-                <img
-                  className="w-[244px] h-[244px] rounded-lg"
-                  src={ex1}
-                  alt="shirt 1"
-                />
-                <p className="text-sm text-[#3F3F3F]">나이키 맨투맨</p>
+                <img src={ex1} alt="shirt 1" />
+                <p className="text-sm text-[#3F3F3F] mt-2">나이키 맨투맨</p>
               </div>
               <div className="image-item">
-                <img
-                  className="w-[244px] h-[244px] rounded-lg"
-                  src={ex1}
-                  alt="shirt 2"
-                />
-                <p className="text-sm text-[#3F3F3F]">나이키 맨투맨</p>
+                <img src={ex2} alt="shirt 2" />
+                <p className="text-sm text-[#3F3F3F] mt-2">핑크색 니트</p>
               </div>
               <div className="image-item">
-                <img
-                  className="w-[244px] h-[244px] rounded-lg"
-                  src={ex1}
-                  alt="shirt 3"
-                />
-                <p className="text-sm text-[#3F3F3F]">나이키 맨투맨</p>
+                <img src={ex3} alt="shirt 3" />
+                <p className="text-sm text-[#3F3F3F] mt-2">흰색 셔츠</p>
               </div>
               <div className="image-item">
-                <img
-                  className="w-[244px] h-[244px] rounded-lg"
-                  src={ex1}
-                  alt="shirt 4"
-                />
-                <p className="text-sm text-[#3F3F3F]">나이키 맨투맨</p>
+                <img src={ex4} alt="shirt 4" />
+                <p className="text-sm text-[#3F3F3F] mt-2">체크 셔츠</p>
               </div>
               <div className="image-item">
-                <img
-                  className="w-[244px] h-[244px] rounded-lg"
-                  src={ex1}
-                  alt="shirt 5"
-                />
-                <p className="text-sm text-[#3F3F3F]">나이키 맨투맨</p>
+                <img src={ex5} alt="shirt 5" />
+                <p className="text-sm text-[#3F3F3F] mt-2">무탠다드 후드</p>
               </div>
             </div>
           </div>
@@ -158,22 +139,80 @@ const ClosetPage = () => {
 
         {selectedItem === "pants" && (
           <div className="p-4 bg-white">
-            <h3 className="font-semibold text-xl text-[#3f3f3f]">하의</h3>
+            <h3 className="font-semibold text-xl text-[#3f3f3f] mb-[30px]">
+              하의
+            </h3>
+            <div className="image-grid">
+              <div className="image-item">
+                <img src={ex3} />
+                <p className="text-sm text-[#3F3F3F] mt-2">플리츠 스커트</p>
+              </div>
+              <div className="image-item">
+                <img src={ex5} alt="shirt 5" />
+                <p className="text-sm text-[#3F3F3F] mt-2">트레이닝 반바지</p>
+              </div>
+            </div>
           </div>
         )}
         {selectedItem === "jacket" && (
           <div className="p-4 bg-white">
-            <h3 className="font-semibold text-xl text-[#3f3f3f]">아우터</h3>
+            <h3 className="font-semibold text-xl text-[#3f3f3f] mb-[30px]">
+              아우터
+            </h3>
+            <div className="image-grid">
+              <div className="image-item">
+                <img src={ex1} />
+                <p className="text-sm text-[#3F3F3F] mt-2">스웨이드 자켓</p>
+              </div>
+              <div className="image-item">
+                <img src={ex4} />
+                <p className="text-sm text-[#3F3F3F] mt-2">검정색 코트</p>
+              </div>
+              <div className="image-item">
+                <img src={ex5} />
+                <p className="text-sm text-[#3F3F3F] mt-2">블레이저</p>
+              </div>
+            </div>
           </div>
         )}
         {selectedItem === "dress" && (
           <div className="p-4 bg-white">
-            <h3 className="font-semibold text-xl text-[#3f3f3f]">원피스</h3>
+            <h3 className="font-semibold text-xl text-[#3f3f3f] mb-[30px]">
+              원피스
+            </h3>
+            <div className="image-grid">
+              <div className="image-item">
+                <img src={ex1} />
+                <p className="text-sm text-[#3F3F3F] mt-2">
+                  무탠다드 pk 원피스
+                </p>
+              </div>
+              <div className="image-item">
+                <img src={ex2} />
+                <p className="text-sm text-[#3F3F3F] mt-2">자라 니트 원피스</p>
+              </div>
+              <div className="image-item">
+                <img src={ex3} />
+                <p className="text-sm text-[#3F3F3F] mt-2">잠옷</p>
+              </div>
+              <div className="image-item">
+                <img src={ex5} />
+                <p className="text-sm text-[#3F3F3F] mt-2">
+                  검정색 정장 원피스
+                </p>
+              </div>
+            </div>
           </div>
         )}
         {selectedItem === "accessory" && (
           <div className="p-4 bg-white">
-            <h3 className="font-semibold text-xl text-[#3f3f3f]">잡화류</h3>
+            <h3 className="font-semibold text-xl text-[#3f3f3f] mb-[30px]">
+              잡화류
+            </h3>
+            <div className="image-item">
+              <img src={ex2} />
+              <p className="text-sm text-[#3F3F3F] mt-2">아크네 머플러</p>
+            </div>
           </div>
         )}
       </div>
