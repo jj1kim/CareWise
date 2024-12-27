@@ -124,3 +124,18 @@ code {
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
+
+/* 기본 색상 */
+.icon {
+  color: #aeaeae; /* 기본 색상 */
+}
+
+/* 호버 상태 색상 변경 */
+.icon:hover {
+  color: #5a5a5a; /* 호버 시 색상 */
+}
+
+/* 클릭 상태 색상 변경 */
+.icon.selected {
+  color: #5a5a5a; /* 클릭 시 색상 */
+}

@@ -42,14 +42,14 @@ const Header = ({ isAuthenticated, onLogout }) => {
             <Link to="/">
               <img className="h-[18px] object-cover" alt="Alert" src={alert} />
             </Link>
-            <Link to="/">
+            <Link to="/closet">
               <img
                 className="h-[18px] object-cover"
                 alt="Closet"
                 src={closet}
               />
             </Link>
-            <Link to="/">
+            <Link to="/user">
               <img
                 className="h-[18px] object-cover"
                 alt="Profile"

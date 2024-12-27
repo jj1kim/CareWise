@@ -5,11 +5,11 @@ import SignupPage from "./SignupPage";
 import SignupDetailsPage from "./SignupDetailsPage";
 import SignupConfirmPage from "./SignupConfirmPage";
 
-const AuthPage = () => {
+const AuthPage = ({ onLogin }) => {
   return (
     <div className="auth-page">
       <Routes>
-        <Route path="login" element={<LoginPage />} />
+        <Route path="login" element={<LoginPage onLogin={onLogin} />} />
         <Route path="signup" element={<SignupPage />} />
         <Route path="signup/details" element={<SignupDetailsPage />} />
         <Route path="signup/confirm" element={<SignupConfirmPage />} />

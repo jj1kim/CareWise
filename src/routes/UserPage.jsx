@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import defaultProfile from "../assets/images/icons/default-profile.png";
+import { Link } from "react-router-dom";
+import defaultProfile from "../assets/images/icons/kinopio.jpg";
 import pen from "../assets/images/icons/pen.svg";
 import like from "../assets/images/icons/like.svg";
 import dislike from "../assets/images/icons/dislike.svg";
@@ -9,7 +10,7 @@ import ProfileModal from "../components/ProfileModal";
 
 const UserPage = () => {
   const [profileImage, setProfileImage] = useState(defaultProfile);
-  const [nickname, setNickname] = useState("닉네임");
+  const [nickname, setNickname] = useState("유니짱");
   const [email, setEmail] = useState("yunheechoi@snu.ac.kr");
   const [likeCount, setLikeCount] = useState(0);
   const [dislikeCount, setDislikeCount] = useState(0);
@@ -21,6 +22,107 @@ const UserPage = () => {
 
   const openModal = (modalSetter) => modalSetter(true);
   const closeModal = (modalSetter) => modalSetter(false);
+  const profileModalContent = (
+    <>
+      <div className="flex flex-row mb-6">
+        <img
+          src={profileImage || defaultProfile}
+          alt="Profile"
+          className="w-[148px] h-[148px] rounded-full mb-4"
+        />
+        <button
+          className="ml-[70px] mt-[60px] bg-[#3F3F3F] h-[36px] text-white text-sm px-6 py-2 rounded-lg hover:bg-[#555] transition duration-300"
+          onClick={() => document.getElementById("profile-image-input").click()}
+        >
+          사진 변경하기
+        </button>
+        <input
+          type="file"
+          id="profile-image-input"
+          accept="image/*"
+          className="hidden"
+        />
+      </div>
+      <form className="flex flex-col gap-4">
+        <label className="text-sm">아이디 변경</label>
+        <input type="text" className="p-2 border border-gray-300 rounded-md" />
+        <label className="text-sm">닉네임 변경(최대 10자)</label>
+        <input type="text" className="p-2 border border-gray-300 rounded-md" />
+      </form>
+      <div className="flex justify-center mt-8">
+        <button className="bg-[#3F3F3F] text-white text-sm px-6 py-2 rounded-lg hover:bg-[#555] transition duration-300">
+          프로필 수정하기
+        </button>
+      </div>
+    </>
+  );
+
+  // 개발자 괴롭히기 모달 내용
+  const developerModalContent = (
+    <>
+      <p className="text-sm text-[#757575]">
+        건의사항, 버그 제보 등 CareWise에게 문의할 점을 남겨주세요!
+      </p>
+      <textarea
+        className="w-full h-40 p-4 mt-5 border border-gray-300 rounded-md resize-none"
+        placeholder="여기에 내용을 입력해주세요..."
+      />
+      <div className="flex justify-center mt-4">
+        <button className="bg-[#3F3F3F] text-white px-6 py-2 rounded-lg hover:bg-[#555] transition duration-300">
+          제출하기
+        </button>
+      </div>
+    </>
+  );
+
+  // 비밀번호 변경 모달 내용
+  const passwordModalContent = (
+    <>
+      <form className="flex flex-col gap-4 mt-8">
+        <label className="text-sm">현재 비밀번호</label>
+        <input
+          type="password"
+          className="p-2 border border-gray-300 rounded-md"
+        />
+        <label className="text-sm">새 비밀번호</label>
+        <input
+          type="password"
+          className="p-2 border border-gray-300 rounded-md"
+        />
+        <label className="text-sm">새 비밀번호 확인</label>
+        <input
+          type="password"
+          className="p-2 border border-gray-300 rounded-md"
+        />
+      </form>
+      <div className="flex justify-center mt-8">
+        <button className="bg-[#3F3F3F] text-white text-sm px-6 py-2 rounded-lg hover:bg-[#555] transition duration-300">
+          비밀번호 변경
+        </button>
+      </div>
+    </>
+  );
+
+  // 계정 삭제 모달 내용
+  const deleteModalContent = (
+    <>
+      <form className="flex flex-col gap-4 mt-8">
+        <label className="text-sm">비밀번호</label>
+        <input
+          type="password"
+          className="p-2 border border-gray-300 rounded-md"
+        />
+      </form>
+      <div className="flex justify-center mt-8">
+        <button
+          className="bg-[#3F3F3F] text-white text-sm px-6 py-2 rounded-lg hover:bg-[#555] transition duration-300"
+          onClick={() => alert("계정이 삭제되었습니다.")}
+        >
+          탈퇴하기
+        </button>
+      </div>
+    </>
+  );
 
   useEffect(() => {
     // 프로필 정보 가져오기
@@ -78,13 +180,36 @@ const UserPage = () => {
           </button>
         </div>
 
-        {/* 모달 구현 */}
         <ProfileModal
           isOpen={isProfileModalOpen}
           onClose={() => closeModal(setProfileModalOpen)}
-          title="프로필 수정"
+          title="프로필 수정하기"
         >
-          <p>여기에서 프로필을 수정할 수 있습니다.</p>
+          {profileModalContent}
+        </ProfileModal>
+
+        <ProfileModal
+          isOpen={isDeveloperModalOpen}
+          onClose={() => closeModal(setDeveloperModalOpen)}
+          title="개발자 괴롭히기"
+        >
+          {developerModalContent}
+        </ProfileModal>
+
+        <ProfileModal
+          isOpen={isPasswordModalOpen}
+          onClose={() => closeModal(setPasswordModalOpen)}
+          title="비밀번호 변경"
+        >
+          {passwordModalContent}
+        </ProfileModal>
+
+        <ProfileModal
+          isOpen={isDeleteModalOpen}
+          onClose={() => closeModal(setDeleteModalOpen)}
+          title="계정 삭제"
+        >
+          {deleteModalContent}
         </ProfileModal>
 
         <div className="mt-[64px] gap-[25px] flex flex-col">
@@ -117,10 +242,13 @@ const UserPage = () => {
         <div className="mt-[48px] gap-[25px] flex flex-col">
           <h2 className="text-[25px] font-semibold text-[#3F3F3F]">내 옷장</h2>
           {/*링크연결하기*/}
-          <a className="flex flex-row gap-[23px] text-[16px] text-[#3A3A3A]">
+          <Link
+            to="/closet"
+            className="flex flex-row gap-[23px] text-[16px] text-[#3A3A3A]"
+          >
             <img src={hanger} alt="hanger" />
             <span>내 옷장 보기</span>
-          </a>
+          </Link>
           <a className="flex flex-row gap-[23px] text-[16px] text-[#3A3A3A]">
             <img src={symbol} alt="symbol" />
             <span>옷장에 옷 등록하기</span>
@@ -132,13 +260,17 @@ const UserPage = () => {
           <h2 className="text-[25px] font-semibold text-[#3F3F3F]">계정</h2>
           {/*링크연결하기*/}
           <a className="flex flex-row gap-[23px] text-[16px] text-[#3A3A3A]">
-            <span>개발자 괴롭히기</span>
+            <span onClick={() => openModal(setDeveloperModalOpen)}>
+              개발자 괴롭히기
+            </span>
           </a>
           <a className="flex flex-row gap-[23px] text-[16px] text-[#3A3A3A]">
-            <span>비밀번호 변경</span>
+            <span onClick={() => openModal(setPasswordModalOpen)}>
+              비밀번호 변경
+            </span>
           </a>
           <a className="flex flex-row gap-[23px] text-[16px] text-[#3A3A3A]">
-            <span>탈퇴하기</span>
+            <span onClick={() => openModal(setDeleteModalOpen)}>탈퇴하기</span>
           </a>
         </div>
       </div>

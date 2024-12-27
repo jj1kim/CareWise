@@ -3,10 +3,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./routes/HomePage";
-import LoginPage from "./routes/LoginPage"; // 로그인 페이지
+import AuthPage from "./routes/AuthPage"; // Auth 경로 통합 페이지
 import CareSearchPage from "./routes/CareSearchPage";
 import CareResultPage from "./routes/CareResultPage";
 import UserPage from "./routes/UserPage.jsx";
+import ClosetPage from "./routes/ClosetPage.jsx";
 import "./App.css";
 
 function App() {
@@ -43,14 +44,14 @@ function App() {
           />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            {/* 로그인 페이지에서 로그인 성공 시 onLogin 호출 */}
             <Route
-              path="/auth/login"
-              element={<LoginPage onLogin={handleLogin} />}
+              path="/auth/*"
+              element={<AuthPage onLogin={handleLogin} />} // AuthPage에 onLogin 전달
             />
             <Route path="/care-search" element={<CareSearchPage />} />
             <Route path="/care-result" element={<CareResultPage />} />
             <Route path="/user" element={<UserPage />} />
+            <Route path="/closet" element={<ClosetPage />} />
           </Routes>
         </div>
         <Footer />
